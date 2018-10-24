@@ -1,5 +1,5 @@
 # Defining the Middle Class in Developing Countries: Evidence from Uganda's Household Panel Survey
-This is the code of my Master Thesis about the identification and analysis of the new middle class in Uganda using panel survey data from the Uganda Bureau of Statistics. 
+This is the code of my Master Thesis about the identification and analysis of the new middle class in Uganda using panel survey data from the Uganda Bureau of Statistics. It replicates the method by [López-Calva and Ortiz-Juarez](https://link.springer.com/article/10.1007/s10888-012-9240-5) for the Identification of the Uganda.
 
 
 ### How to run the Code:
