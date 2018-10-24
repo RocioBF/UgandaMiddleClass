@@ -3,7 +3,7 @@ This is the code of my Master Thesis about the identification and analysis of th
 
 
 ### How to run the Code:
-1. Download or clone the repository to your local.
+1. Download or clone the repository to your local machine.
 2. Download the [National Panel Survey Data](http://microdata.worldbank.org/index.php/catalog/lsms) for 2011 and 2013 from [Uganda Bureau of Statistics](https://www.ubos.org/) - Note that you will need to ask for permission.
 You will need the .csv Version for 2013 and stata format for 2011.
 3. Place the data in the following structure in the folder
