@@ -9,7 +9,7 @@ You will need the .csv Version for 2013 and stata format for 2011.
 3. Place the data in the following structure in the folder
 ```
 UgandaMiddleClass
-│   ...    
+│   [Code files of the repository]    
 │
 └───raw_data
 │       └───background_uganda_data
@@ -19,4 +19,11 @@ UgandaMiddleClass
 │       └───UGA_2013_UNPS_v01_M_CSV
 |           | [Files from the National Panel Survey for 2013] 
 ```
+4. Run the script `Main_code.R`. It will call all other relevant scripts accordingly. To see specific regression tables or intermediate
+varibles you might need to uncomment parts of the code. Further explanations for this can be found in the respective scripts.
 
+
+### Requirements:
+
+
+### Brief explanation of the different scripts:
