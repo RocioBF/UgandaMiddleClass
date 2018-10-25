@@ -1,8 +1,9 @@
 # Data files
-.pdf
-.csv
-.dta
-.xlsx
+*.pdf
+*.csv
+*.dta
+*.xlsx
+/raw_data/
 
 # History files
 .Rhistory
