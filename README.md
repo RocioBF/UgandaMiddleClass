@@ -22,9 +22,43 @@ UgandaMiddleClass
 ```
 5. Run the script `Main_code.R`. It will call all other relevant scripts accordingly. To see specific regression tables or intermediate
 varibles you might need to uncomment parts of the code. Further explanations for this can be found in the respective scripts.
-
+6. Warnings can be ignored.
 
 ### Requirements:
-
+R version 3.5.0 
+List of packages needed: 
+haven
+tidyr
+readr
+data.table
+dplyr
+tibble
+ggplot2
+purrr
+sm
+KernSmooth
+locpol
+stargazer
+HH
+ineq
+readxl
+reshape2
 
 ### Brief explanation of the different scripts:
+#### Code_database.R
+This script is used to call all data that is related to the methodology analysis. Furthermore, varibles are renamed to be used in the analysis.
+#### data_13.R
+In this script the data frame for the year 2013 is created. This data contains personal information of the head of the household, education level, sector of the labor activity, household sanitation, energy use and assets hold.  
+#### data_11.R
+In this script the data frame for the year 2011 is created. This data contains personal information of the head of the household, education level, sector of the labor activity, household sanitation, energy use and assets hold.
+#### main_data_frame.R
+
+#### regression_variables.R
+#### methodology.R
+#### MC_characteristics.R
+#### Table_1.R
+#### Table_2.R 
+#### Uganda_background.R
+
+
+
