@@ -7,7 +7,7 @@ regression_df_clean$annual_consump_11 <-
   regression_df_clean$welfare_11 * 12
 
 regression_df_clean$daily_c_USD_11 <-
-  regression_df_clean$daily_consump_11 / regression_df_clean$ex_rate
+  regression_df_clean$daily_consump_11 / ex_rate
 table_absolute_methods_2011 <- regression_df_clean %>%
   summarize(
     total = n(),
@@ -79,7 +79,7 @@ regression_df_clean$annual_consump_13 <-
 
 
 regression_df_clean$daily_c_USD_13 <-
-  regression_df_clean$daily_consump_13 / regression_df_clean$ex_rate
+  regression_df_clean$daily_consump_13 / ex_rate
 table_absolute_methods_2013 <- regression_df_clean %>%
   summarize(
     total = n(),
