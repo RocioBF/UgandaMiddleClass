@@ -1,6 +1,9 @@
 #TABLE : Share of population in Uganda using different methods
+# from the existing literature.
 
+#################################################################
 ## For the wave 2011:
+
 regression_df_clean$daily_consump_11 <-
   regression_df_clean$welfare_11 / 30
 regression_df_clean$annual_consump_11 <-
@@ -8,6 +11,8 @@ regression_df_clean$annual_consump_11 <-
 
 regression_df_clean$daily_c_USD_11 <-
   regression_df_clean$daily_consump_11 / ex_rate
+
+### Absolute methods:
 table_absolute_methods_2011 <- regression_df_clean %>%
   summarize(
     total = n(),
@@ -33,6 +38,7 @@ table_absolute_methods_2011 <- regression_df_clean %>%
       100
   )
 
+### Relative methods:
 table_relative_methods_2011 <- regression_df_clean %>%
   summarize(
     total = n(),
@@ -80,6 +86,8 @@ regression_df_clean$annual_consump_13 <-
 
 regression_df_clean$daily_c_USD_13 <-
   regression_df_clean$daily_consump_13 / ex_rate
+
+### Absolute methods:
 table_absolute_methods_2013 <- regression_df_clean %>%
   summarize(
     total = n(),
@@ -105,6 +113,8 @@ table_absolute_methods_2013 <- regression_df_clean %>%
       100
   )
 
+
+### Relative methods:
 table_relative_methods_2013 <- regression_df_clean %>%
   summarize(
     total = n(),
@@ -142,6 +152,7 @@ table_relative_methods_2013 <- regression_df_clean %>%
     share_Birdsall = sum(10 * ex_rate <= daily_consump_13 &
                            daily_consump_13 <= q_95) / total * 100
   )
+
 # Clear namespace of varibles which are not used in future analysis steps.
 # To see intermediate results change the code below accordingly.
 rm(

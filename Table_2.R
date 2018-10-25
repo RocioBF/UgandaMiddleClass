@@ -1,5 +1,6 @@
 # Table: Characteristics of hh in 2011
 
+## Eduation of the head of the household:
 Table_educ_2011 <- regression_df_clean %>%
   summarize(
     no_schooling = mean(education_level_11 == 0),
@@ -12,6 +13,7 @@ Table_educ_2011 <- regression_df_clean %>%
     university = mean(education_level_11 == 7)
   )
 
+# Sector of labor activity of the head household:
 Table_sector_2011 <- regression_df_clean %>%
   summarize(
     primary = mean(sector_11 == 1),
@@ -19,6 +21,7 @@ Table_sector_2011 <- regression_df_clean %>%
     services = mean(sector_11 == 3)
   )
 
+# Marital status of the head of the household: 
 Table_marital_status_2011 <- regression_df_clean %>%
   summarize(
     monogamy = mean(marital_status_11 == 1),
@@ -29,10 +32,13 @@ Table_marital_status_2011 <- regression_df_clean %>%
   )
 
 
+# Other characteristics of the head of the household:
 Table_other_Hoh_char_2011 <- regression_df_clean %>%
   summarize(age = mean(age_11),
             male = mean(male_11 == 1))
 
+# Dwelling characteristics of the household
+# (sanitation and assets hold):
 Table_dwelling_2011 <- regression_df_clean %>%
   summarize(
     urban = mean(urban_11 == 1),
@@ -53,6 +59,7 @@ Table_dwelling_2011 <- regression_df_clean %>%
     mobilephone = mean(ownership_mobile_phone_11 == 1)
   )
 
+# Shocks suffered during the last year by the hh:
 Table_shocks_2011 <- regression_df_clean %>%
   summarize(
     health_shock = mean(health_shock == 1),
@@ -65,6 +72,10 @@ Table_shocks_2011 <- regression_df_clean %>%
     change_n_working = mean(change_n_working),
     change_n_resident = mean(change_n_resident)
   )
+
+
+# Clear namespace of varibles which are not used in future analysis steps.
+# To see intermediate results change the code below accordingly.
 rm(
   Table_dwelling_2011,
   Table_educ_2011,

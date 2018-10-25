@@ -1,4 +1,8 @@
-# RESULTS:
+# In this section the middle class is analyze in comparison with the 
+# other social classes.
+
+##################################################################
+# Expenditure distribution for 2011 and 2013:
 
 # Kernel Density (expenditure in 2011 and 2013):
 
@@ -58,9 +62,7 @@ legend(
   cex = 1
 )
 
-
-
-#Gini and Lorenz Curve:
+#Gini and Lorenz Curve for each period:
 
 ineq(regression_df_clean$welfare_11,
      type = "Gini")
@@ -88,6 +90,7 @@ legend(
   cex = 1
 )
 
+##################################################################
 #Table Share of population:
 Share_population <- regression_df_clean %>%
   summarise(
@@ -109,6 +112,11 @@ Share_population <- regression_df_clean %>%
     EC_share_11 = sum(ln_expenditure_11 > upper$upper) / total,
     EC_share_13 = sum(ln_expenditure_13 > upper$upper) / total
   )
+
+##################################################################
+# Steps to visualize the share of expenditure for each social 
+# class and by period.
+# For this, I use the 'panel_df_clean'
 
 #logaritm of expenditure:
 panel_df_clean$ln_expenditure <- log(panel_df_clean$welfare)
@@ -194,8 +202,8 @@ ggplot(data = share_df,
   )
 
 
-##########################################################
-# Differences among groups:
+##################################################################
+# In this section I test the differences among groups, by a t-test.
 
 ## EDUCATION:
 
