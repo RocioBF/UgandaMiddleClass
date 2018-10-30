@@ -27,22 +27,22 @@ varibles you might need to uncomment parts of the code. Further explanations for
 ### Requirements:
 R version 3.5.0 
 List of packages needed: 
-haven
-tidyr
-readr
-data.table
-dplyr
-tibble
-ggplot2
-purrr
-sm
-KernSmooth
-locpol
-stargazer
-HH
-ineq
-readxl
-reshape2
+* haven
+* tidyr
+* readr
+* data.table
+* dplyr
+* tibble
+* ggplot2
+* purrr
+* sm
+* KernSmooth
+* locpol
+* stargazer
+* HH
+* ineq
+* readxl
+* reshape2
 
 ### Brief explanation of the different scripts:
 #### Code_database.R
